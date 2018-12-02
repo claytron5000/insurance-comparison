@@ -1,0 +1,10 @@
+.Plan {
+    border-right: dashed 1rem #4455aa;
+    min-height: 100vh;
+    padding: 0 1rem;
+}
+.Plan ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 0;
+}
