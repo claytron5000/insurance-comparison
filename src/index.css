@@ -22,3 +22,40 @@ li {
   padding:  1rem;
   border-radius: 2px;
 }
+
+.icon {
+  font-size: 3rem;
+}
+button {
+  border: none;
+  float:  right;
+  padding: 1rem 2rem;
+  margin: 0;
+  text-decoration: none;
+  /* background: #4455aa; */
+  color: #4455aa;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, 
+              transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+  color: #334499;
+}
+
+button:focus {
+  outline: 1px solid #334499;
+  outline-offset: -4px;
+}
+
+button:active > .icon {
+  transform: scale(0.99);
+}

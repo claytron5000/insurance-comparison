@@ -58,8 +58,8 @@ export default class Coverage extends Component {
                 </h2>
                 <input onChange={(e) => this.props.select(e, this.props.formId)} id={`${this.props.formId}-compare`} type="checkbox" />
                 <label for={`${this.props.formId}-compare`}>Select for Comparison</label>
-                <form>
-                <p>All values should be entered as whole number for the entire year.</p>
+                <form onSubmit={(e) => this.props.select(e, this.props.formId)}>
+                <p>All values should be entered as whole number for the entire year. NO COMMAS, DOLLAR SIGNS OR OTHER NON-NUMERICS</p>
                 {Object.keys(fields).map( (field) => {
                     const id = this.props.formId + '_' + field
 

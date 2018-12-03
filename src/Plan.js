@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import Coverage from './Coverage.js';
 import update from 'immutability-helper';
+
+import Coverage from './Coverage.js';
 import Comparison from './Comparison.js'
 import './Plan.css'
 
@@ -35,9 +36,7 @@ export default class Plan extends Component {
     }
     saveTitle(title) {
         const coverages = update(this.state.coverages, {[title.id]: {coverageTitle: {$set: title.value}}})
-
         this.setState({ coverages })
-        // const this.state.coverages[title.id].coverageTitle
     }
     // This definitely shouldn't be in two places
     calculateMinimum(fields) {
@@ -67,6 +66,7 @@ export default class Plan extends Component {
         const coverages = this.state.coverages
         const compare = Object.keys(coverages)
             .reduce((acc, curr) => {
+                console.log(acc)
                 if (coverages[curr].compare) {
                     const min = this.calculateMinimum(coverages[curr].fields)
                     const max = this.calculateOutPocketMaximum(coverages[curr].fields)
@@ -81,8 +81,9 @@ export default class Plan extends Component {
                         acc.maximum = max
                     }
                     
-                    return acc
+                    // return acc
                 }
+                return acc
                 
             }, {})
         const comparisons = update(this.state.comparisons, {$push: [compare]});
@@ -101,7 +102,7 @@ export default class Plan extends Component {
     }
 
     updateField(e, field, coverageId) {
-        
+        e.preventDefault();
         const value = e.target.value
         if (!value.match(/[0-9]*/)) {
             console.log(value)
@@ -119,7 +120,7 @@ export default class Plan extends Component {
             <div>
                 <div className='Plan'>
                     <h1>{this.state.planTitle}</h1>
-                    <button onClick={this.addToCompare}>Add Selected to Comparison ></button>
+                    <button onClick={this.addToCompare}>Add Selected to Comparison <span className='icon'>></span></button>
                     <ul>
                         {Object.keys(this.state.coverages).map( 
                             (coverage) => <Coverage 
@@ -132,7 +133,7 @@ export default class Plan extends Component {
                                 />
                         )}
                     </ul>
-                    <button onClick={this.addCoverage}>+ Add Coverage</button>
+                    <button onClick={this.addCoverage}><span className='icon'>+</span> Add Coverage</button>
                 </div>
                 <div className='Comparisons'>
                     <ul>
