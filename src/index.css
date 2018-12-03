@@ -25,14 +25,20 @@ li {
 
 .icon {
   font-size: 3rem;
+  bottom: -0.5rem;
+  position: relative;
+}
+.icon-arrow {
+  bottom: -0.75rem;
 }
 button {
   border: none;
-  float:  right;
+  display: inline-block;
+  width: 45%;
   padding: 1rem 2rem;
   margin: 0;
   text-decoration: none;
-  /* background: #4455aa; */
+  background: transparent;
   color: #4455aa;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -58,4 +64,10 @@ button:focus {
 
 button:active > .icon {
   transform: scale(0.99);
+}
+
+h1 {
+  width: 30%;
+  display: inline-block;
+  margin-right: 25%;
 }

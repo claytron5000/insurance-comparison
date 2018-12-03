@@ -120,7 +120,7 @@ export default class Plan extends Component {
             <div>
                 <div className='Plan'>
                     <h1>{this.state.planTitle}</h1>
-                    <button onClick={this.addToCompare}>Add Selected to Comparison <span className='icon'>></span></button>
+                    <button onClick={this.addToCompare}>Add Selected to Comparison <span className='icon icon-arrow'>→</span></button>
                     <ul>
                         {Object.keys(this.state.coverages).map( 
                             (coverage) => <Coverage 
@@ -133,7 +133,7 @@ export default class Plan extends Component {
                                 />
                         )}
                     </ul>
-                    <button onClick={this.addCoverage}><span className='icon'>+</span> Add Coverage</button>
+                    <button onClick={this.addCoverage}><span className='icon icon-plus'>+</span> Add Coverage</button>
                 </div>
                 <div className='Comparisons'>
                     <ul>
