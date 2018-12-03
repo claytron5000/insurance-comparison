@@ -1,13 +1,13 @@
 {
-  "main.css": "/static/css/main.b7d0b890.chunk.css",
-  "main.js": "/static/js/main.d6bb3179.chunk.js",
-  "main.js.map": "/static/js/main.d6bb3179.chunk.js.map",
-  "static/js/1.22d3a9e8.chunk.js": "/static/js/1.22d3a9e8.chunk.js",
-  "static/js/1.22d3a9e8.chunk.js.map": "/static/js/1.22d3a9e8.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
-  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/css/main.b7d0b890.chunk.css.map": "/static/css/main.b7d0b890.chunk.css.map",
-  "index.html": "/index.html",
-  "precache-manifest.a99d9cb75ff448be4bc028214548aad6.js": "/precache-manifest.a99d9cb75ff448be4bc028214548aad6.js",
-  "service-worker.js": "/service-worker.js"
+  "main.css": "/insurance-comparison/static/css/main.b7d0b890.chunk.css",
+  "main.js": "/insurance-comparison/static/js/main.6cb16ec6.chunk.js",
+  "main.js.map": "/insurance-comparison/static/js/main.6cb16ec6.chunk.js.map",
+  "static/js/1.22d3a9e8.chunk.js": "/insurance-comparison/static/js/1.22d3a9e8.chunk.js",
+  "static/js/1.22d3a9e8.chunk.js.map": "/insurance-comparison/static/js/1.22d3a9e8.chunk.js.map",
+  "runtime~main.js": "/insurance-comparison/static/js/runtime~main.44e2d52e.js",
+  "runtime~main.js.map": "/insurance-comparison/static/js/runtime~main.44e2d52e.js.map",
+  "static/css/main.b7d0b890.chunk.css.map": "/insurance-comparison/static/css/main.b7d0b890.chunk.css.map",
+  "index.html": "/insurance-comparison/index.html",
+  "precache-manifest.aa5cfc72182db4c7d49bc2f24e62265f.js": "/insurance-comparison/precache-manifest.aa5cfc72182db4c7d49bc2f24e62265f.js",
+  "service-worker.js": "/insurance-comparison/service-worker.js"
 }
