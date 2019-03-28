@@ -1,9 +1,26 @@
 import React, { Component } from 'react';
 import update from 'immutability-helper';
+import { connect } from 'react-redux'
 
 import Coverage from './Coverage.js';
 import Comparison from './Comparison.js'
 import './Plan.css'
+
+
+const addNewCoverage = coverages => {
+    return coverages[] = {
+        coverageTitle: 'Coverage Title',
+        fields: {
+            premium: {name: 'Yearly Premium', value: '', positive: true},
+            deductible: {name: 'Deductible', value: '', positive: true},
+            pocketMax: {name: 'Out of pocket maximum', value: '', positive: true},
+            hsa: {name: 'Health Savings Account', value: '', positive: false},
+            hra: {name: 'Health Reimbursment Account', value: '', positive: false},
+            surcharge: {name: 'Surcharge', value: '', positive: true}
+        },
+        compare: false,
+    };
+}
 
 export default class Plan extends Component {
     constructor() {
